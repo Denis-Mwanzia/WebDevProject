@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Denis Mwanzia">
+    <meta name="description" content="HTML form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>New Clients Registration Form</h1>
+    </h1>
+    <form action="#" method="post">
+        <div class="name">
+            <label for="name">Full Name:</label> <br>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="email">
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="tel">
+            <label for="tel">Phone Number:</label> <br>
+            <input type="tel" id="tel" name="tel" required>
+        </div>
+        <div class="idNumber">
+            <label for="idNmber">ID Number:</label> <br>
+            <input type="text" id="idNmber" name="idNumber" required>
+        </div>
+        <div class="region">
+            <label for="region">Region:</label> <br>
+            <input list="regions" id="region" name="region" required>
+            <datalist id="regions">
+                <option value="">select</option>
+                <option value="Imara Daima">Imara Daima</option>
+                <option value="South C">South C</option>
+                <option value="South B">South B</option>
+                <option value="Kilimani">Kilimani</option>
+                <option value="Eastleigh"></option>
+            </datalist>
+            <div class="estateApartment">
+                <label for="estateApartment">Estate/Apartment:</label> <br>
+                <select name="estateApartment" id="estateApartment">
+                    <option value="">select</option>
+                    <option value="Estate 1">Estate 1</option>
+                    <option value="Estate 2">Estate 2</option>
+                    <option value="Estate 3">Estate 3</option>
+                    <option value="Apartment 1">Apartment 1</option>
+                    <option value="Apartment 2">Apartment 2</option>
+                    <option value="Apartment 3">Apartment 3</option>
+                </select>
+            </div>
+            <div class="houseNumber">
+                <label for="houseNumber">House Number:</label> <br>
+                <input type="text" id="houseNumber" name="houseNumber" required>
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
